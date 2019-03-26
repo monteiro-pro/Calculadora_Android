@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
@@ -164,22 +165,27 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/tvDot"
+                style="@style/NumberButton"
+                android:onClick="onClickNumber"
+                android:text="."/>
+            <Button
                 android:id="@+id/tvZero"
                 style="@style/NumberButtonZero"
                 android:onClick="onClickNumber"
                 android:text="0" />
             <Button
-                android:id="@+id/tvDot"
-                style="@style/NumberButton"
-                android:text="."/>
-
-            <Button
                 android:id="@+id/tvEquals"
                 style="@style/ResultButtonStyle"
                 android:onClick="onClickEqual"
                 android:text="=" />
-
-
+            <ImageView
+                android:id="@+id/tvBackSpace"
+                style="@style/ActionButtonStyle"
+                android:scaleType="center"
+                android:src="@drawable/ic_backspace_white_18dp"
+                android:onClick="onClickBackSpace"
+                android:text="f" />
         </LinearLayout>
 
     </LinearLayout>

@@ -86,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
         updateScreen();
     }
 
+    public void onClickBackSpace(View v){
+        display = display.substring(0, display.length()-1);
+        updateScreen();
+    }
+
     private double operate(String a, String b, String op){
         switch (op){
             case "+": return Double.valueOf(a) + Double.valueOf(b);

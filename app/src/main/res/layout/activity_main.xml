@@ -176,7 +176,7 @@
             <Button
                 android:id="@+id/tvEquals"
                 style="@style/ResultButtonStyle"
-                android:onClick="onClickEquals"
+                android:onClick="onClickEqual"
                 android:text="=" />
 
 

@@ -11,7 +11,7 @@
         android:id="@+id/tvExpression"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:textColor="@color/numerationButton"
+        android:textColor="@color/numeroButton"
         android:gravity="end"
         android:maxLines="1"/>
 
@@ -36,27 +36,27 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/tvClear"
-                style="@style/ActionButtonStyle"
-                android:onClick="onClickClear"
+                android:id="@+id/tvLimpar"
+                style="@style/AcaoButtonStyle"
+                android:onClick="onClickLimpar"
                 android:text="C" />
 
             <Button
                 android:id="@+id/tvInvert"
-                style="@style/ActionButtonStyle"
-                android:onClick="onClickOperator"
+                style="@style/AcaoButtonStyle"
+                android:onClick="onClickMaisMenos"
                 android:text="+/-" />
 
             <Button
                 android:id="@+id/tvPorcent"
-                style="@style/ActionButtonStyle"
-                android:onClick="onClickOperator"
+                style="@style/AcaoButtonStyle"
+                android:onClick="onClickOperador"
                 android:text="%" />
 
             <Button
-                android:id="@+id/tvDivide"
-                style="@style/ActionButtonStyle"
-                android:onClick="onClickOperator"
+                android:id="@+id/tvDividir"
+                style="@style/AcaoButtonStyle"
+                android:onClick="onClickOperador"
                 android:text="/" />
 
 
@@ -69,27 +69,27 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/tvSeven"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
+                android:id="@+id/tvSete"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
                 android:text="7" />
 
             <Button
-                android:id="@+id/tvEight"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
+                android:id="@+id/tvOito"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
                 android:text="8" />
 
             <Button
-                android:id="@+id/tvNine"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
+                android:id="@+id/tvNove"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
                 android:text="9" />
 
             <Button
                 android:id="@+id/tvMul"
-                style="@style/ActionButtonStyle"
-                android:onClick="onClickOperator"
+                style="@style/AcaoButtonStyle"
+                android:onClick="onClickOperador"
                 android:text="x" />
 
         </LinearLayout>
@@ -101,27 +101,27 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/tvFour"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
+                android:id="@+id/tvQuatro"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
                 android:text="4" />
 
             <Button
-                android:id="@+id/tvFive"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
+                android:id="@+id/tvSinco"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
                 android:text="5" />
 
             <Button
-                android:id="@+id/tvSix"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
+                android:id="@+id/tvSeis"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
                 android:text="6" />
 
             <Button
-                android:id="@+id/tvMinus"
-                style="@style/ActionButtonStyle"
-                android:onClick="onClickOperator"
+                android:id="@+id/tvMenos"
+                style="@style/AcaoButtonStyle"
+                android:onClick="onClickOperador"
                 android:text="-" />
 
         </LinearLayout>
@@ -133,27 +133,27 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/tvOne"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
+                android:id="@+id/tvUm"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
                 android:text="1" />
 
             <Button
-                android:id="@+id/tvTwo"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
+                android:id="@+id/tvDois"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
                 android:text="2" />
 
             <Button
-                android:id="@+id/tvThree"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
+                android:id="@+id/tvTres"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
                 android:text="3" />
 
             <Button
-                android:id="@+id/tvPlus"
-                style="@style/ActionButtonStyle"
-                android:onClick="onClickOperator"
+                android:id="@+id/tvMais"
+                style="@style/AcaoButtonStyle"
+                android:onClick="onClickOperador"
                 android:text="+" />
 
         </LinearLayout>
@@ -165,23 +165,25 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/tvDot"
-                style="@style/NumberButton"
-                android:onClick="onClickNumber"
-                android:text="."/>
+                android:id="@+id/tvPonto"
+                style="@style/NumeroButton"
+                android:onClick="onClickNumero"
+                android:text="." />
+
             <Button
                 android:id="@+id/tvZero"
-                style="@style/NumberButtonZero"
-                android:onClick="onClickNumber"
+                style="@style/NumeroButtonZero"
+                android:onClick="onClickNumero"
                 android:text="0" />
+
             <Button
-                android:id="@+id/tvEquals"
-                style="@style/ResultButtonStyle"
-                android:onClick="onClickEqual"
+                android:id="@+id/tvIgual"
+                style="@style/ResultadoButtonStyle"
+                android:onClick="onClickIgual"
                 android:text="=" />
             <ImageView
                 android:id="@+id/tvBackSpace"
-                style="@style/ActionButtonStyle"
+                style="@style/AcaoButtonStyle"
                 android:scaleType="center"
                 android:src="@drawable/ic_backspace_white_18dp"
                 android:onClick="onClickBackSpace"

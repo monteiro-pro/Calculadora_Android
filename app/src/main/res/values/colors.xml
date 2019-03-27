@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="actionButton">#2E2E2E</color>
-    <color name="numerationButton">#6E6E6E</color>
-    <color name="resultButton">#F57C00</color>
+    <color name="acaoButton">#2E2E2E</color>
+    <color name="numeroButton">#6E6E6E</color>
+    <color name="resultadoButton">#F57C00</color>
 </resources>
